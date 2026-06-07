@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+    padding: 20px;
+}
+.Carts{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+}
+.cart{
+    border-radius: 20px;
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    row-gap: 20px;
+}
+.cart h2,
+.cart p{
+    margin: 0;
+}
+.cart img{
+    border-radius: 50%;
+    width: 200px;
+}
