@@ -1,0 +1,16 @@
+body{
+  background-color: rebeccapurple;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.component1{
+  background-color: yellow;
+  padding: 20px;
+}
+.Navbar{
+  background-color: skyblue;
+  padding: 20px;
+}
