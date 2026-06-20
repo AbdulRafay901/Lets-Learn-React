@@ -19,8 +19,6 @@
 
         // Two Way Binding ------------- End
 
-        
-
 
     return (
         <div className="bg-yellow-700 p-20">
