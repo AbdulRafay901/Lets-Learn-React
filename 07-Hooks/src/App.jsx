@@ -3,6 +3,7 @@ import UseState from './useState'
 import StopTimer from './stopTimer'
 import AdvanceUseState from './advanceUseState'
 import FormHandling  from './formHandling'
+import NoteBook from './NoteBook'
 
 const App = () => {
   return (
@@ -16,7 +17,10 @@ const App = () => {
          <AdvanceUseState />
          <br></br>
          <FormHandling />
-        
+         <br></br>
+         <br></br>
+         <br></br>
+         <NoteBook /> 
     </div>
   )
 }
