@@ -4,6 +4,7 @@ import StopTimer from './stopTimer'
 import AdvanceUseState from './advanceUseState'
 import FormHandling  from './formHandling'
 import NoteBook from './NoteBook'
+import Localstorage from './localstorage'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
          <br></br>
          <br></br>
          <NoteBook /> 
+         <Localstorage />
     </div>
   )
 }
