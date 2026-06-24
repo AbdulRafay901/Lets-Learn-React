@@ -20,11 +20,12 @@ function withoutReload(e){
     setnotes(copyNotes)
 
 
+
 }
 
 
   return (
-    <div className='bg-black text-white h-96 p-5 flex justify-between'>
+    <div className='bg-black text-white h-96 p-5'>
         <form action="" className='flex gap-5' onSubmit={(e) => {
             withoutReload(e)
         }}>
@@ -51,14 +52,27 @@ function withoutReload(e){
                </button>
         </form>
 
-        <div className="">
-               {notes.map(function(elem, idx){
-                    <div className="bg-red-600 w-96 h-11">
-                          
-                    </div>
-               })}
-        </div>
+
+      <div className='mt-10 my-10'>
+          {notes.map((elem, idx) => (
+            <div key={idx} >
+                 <p>Name: {elem.Name}</p>
+                 <p>Email: {elem.Email}</p>
+                 <button type="button" onClick={(idx) =>{
+                     const copyNotes = [...notes]
+
+                     copyNotes.splice(idx,1)
+
+                     setnotes(copyNotes)
+                 }}>Delete</button>
+                 <hr />
+            </div>
+          ))}
+      </div>
+        
     </div>
+    
+    
 
     
   )
