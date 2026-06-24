@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 const apiCalling = () => {
 
-    const [first, setfirst] = useState()
+    const [first, setfirst] = useState([])
 
     const getData = async () => {
         const data = await axios("https://jsonplaceholder.typicode.com/todos/")
@@ -19,7 +19,9 @@ const apiCalling = () => {
   return (
        <div className="">
              {first.map((elem,idx) => (
-                 <p>{elem.title}</p>
+                 <div className=""  key={idx}>
+                      <p>{elem.title}</p>
+                 </div>
              ))}
        </div>
   )
