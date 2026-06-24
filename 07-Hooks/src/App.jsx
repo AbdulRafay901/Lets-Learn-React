@@ -7,10 +7,11 @@ import NoteBook from './NoteBook'
 import Localstorage from './localstorage'
 import ApiCalling  from './apiCalling'
 import UseStateRealUse from './useStateRealUse'
+import Gallery from './Gallery'
 
 const App = () => {
   return (
-    <div className="p-10">
+    <div className="">
          <UseState />
          <br></br>
          <br></br>
@@ -27,6 +28,7 @@ const App = () => {
          <Localstorage />
          <ApiCalling />
          <UseStateRealUse />
+         <Gallery />
     </div>
   )
 }
