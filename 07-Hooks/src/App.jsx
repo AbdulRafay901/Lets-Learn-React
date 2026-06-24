@@ -5,6 +5,7 @@ import AdvanceUseState from './advanceUseState'
 import FormHandling  from './formHandling'
 import NoteBook from './NoteBook'
 import Localstorage from './localstorage'
+import ApiCalling  from './apiCalling'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
          <br></br>
          <NoteBook /> 
          <Localstorage />
+         <ApiCalling />
     </div>
   )
 }
