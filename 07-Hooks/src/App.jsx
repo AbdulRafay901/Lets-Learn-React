@@ -6,6 +6,7 @@ import FormHandling  from './formHandling'
 import NoteBook from './NoteBook'
 import Localstorage from './localstorage'
 import ApiCalling  from './apiCalling'
+import UseStateRealUse from './useStateRealUse'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
          <NoteBook /> 
          <Localstorage />
          <ApiCalling />
+         <UseStateRealUse />
     </div>
   )
 }
