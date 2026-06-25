@@ -29,14 +29,14 @@ const Gallery = () => {
          }}
          >Fetch Data
          </button>
-         <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-4">
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                {data.map((elem,idx) => (
                    <div className="" key={idx}>
-                         <img src={elem.download_url} className='w-full h-56' ></img>
+                         <img src={elem.download_url} className='w-full h-56 object-cover rounded' ></img>
                          <p className='text-white'>{elem.author}</p>
                    </div>
                ))}
-               <div className="col-span-4 flex justify-center gap-2">
+               <div className="flex justify-center gap-3 mt-5">
                      <button className='bg-yellow-300 px-7 py-1' onClick={() => {
                           if(page > 1){
                             setpage(page - 1)
