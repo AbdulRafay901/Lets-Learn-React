@@ -36,7 +36,21 @@ const Gallery = () => {
                          <p className='text-white'>{elem.author}</p>
                    </div>
                ))}
-               
+               <div className="col-span-4 flex justify-center gap-2">
+                     <button className='bg-yellow-300 px-7 py-1' onClick={() => {
+                          if(page > 1){
+                            setpage(page - 1)
+
+                            fetchdata()
+                          }
+                     }}>Prev</button>
+                     <button className='bg-yellow-300 px-7 py-1' onClick={() => {
+                           setpage(page + 1)
+
+                           fetchdata()
+                     }}>Next</button>
+                     
+               </div>
          </div>
     </div>
   )
