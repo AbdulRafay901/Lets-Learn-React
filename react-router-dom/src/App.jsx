@@ -4,6 +4,8 @@ import Navbar from './assets/component/Navbar'
 import Home  from './assets/pages/Home'
 import About from './assets/pages/About'
 import NotFound from './assets/pages/NotFound'
+import { Courses } from './assets/pages/dynamicRouting/Courses'
+import { CoursesDetails } from './assets/pages/dynamicRouting/CoursesDetails'
 
 // Nested Routing page ------------------------ Start
 
@@ -24,10 +26,18 @@ const App = () => {
            <Route path='/' element={<Home />}></Route>
            <Route path='/About' element={<About />}></Route>
            <Route path='*' element={<NotFound />}></Route>
-           <Route path="/products" element={<Products />}>
-                  <Route path='men' element={<Mens />}></Route>
-                  <Route path='women' element={<Women />}></Route>
-           </Route>
+
+           {/* Nested Routing ------------  Start */}
+               <Route path="/products" element={<Products />}>
+                      <Route path='men' element={<Mens />}></Route>
+                      <Route path='women' element={<Women />}></Route>
+               </Route>
+            {/* Nested Routing ------------  End */}
+
+            {/* Dynamic Routing ----------- Start */}
+                <Route path="/courses" element={<Courses/>} />
+                <Route path="/courses/:id" element={<CoursesDetails/>} />
+           {/* Dynamic Routing ----------- End */}
     </Routes>
     </div>
   )
