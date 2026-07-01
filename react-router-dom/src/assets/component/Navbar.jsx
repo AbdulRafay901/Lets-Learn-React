@@ -2,6 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
+// Acha  YE Bouns tip he child se PArent me data bhejne ki jese hamne navbar se App me behja he theme change krne
+// ke liye 
+
+
 
 
 const Navbar = (props) => {

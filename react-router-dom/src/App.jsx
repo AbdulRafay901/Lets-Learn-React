@@ -8,6 +8,7 @@ import { Courses } from './assets/pages/dynamicRouting/Courses'
 import { CoursesDetails } from './assets/pages/dynamicRouting/CoursesDetails'
 import { useState } from 'react'
 
+
 // Nested Routing page ------------------------ Start
 
 import Products from './assets/pages/NestedRouting/Products'
@@ -20,6 +21,12 @@ import './App.css';
 
 const App = () => {
 
+
+  // Bouns Tip ------------------ Start
+
+  // Acha  YE Bouns tip he child se PArent me data bhejne ki jese hamne navbar se App me behja he theme change krne
+// ke liye
+
   const [Theme, setTheme] = useState("Dark");
 
   console.log(Theme)
@@ -29,6 +36,8 @@ const App = () => {
     
     <div id="App">
     <Navbar Theme={Theme} setTheme={setTheme}/>
+
+    {/* Bouns Tip ------------------ End */}
     <Routes>
 
            <Route path='/' element={<Home />}></Route>
