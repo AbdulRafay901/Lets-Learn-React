@@ -6,6 +6,7 @@ import About from './assets/pages/About'
 import NotFound from './assets/pages/NotFound'
 import { Courses } from './assets/pages/dynamicRouting/Courses'
 import { CoursesDetails } from './assets/pages/dynamicRouting/CoursesDetails'
+import { useState } from 'react'
 
 // Nested Routing page ------------------------ Start
 
@@ -18,9 +19,16 @@ import './App.css';
 
 
 const App = () => {
+
+  const [Theme, setTheme] = useState("Dark");
+
+  console.log(Theme)
+
+
   return (
+    
     <div id="App">
-    <Navbar/>
+    <Navbar Theme={Theme} setTheme={setTheme}/>
     <Routes>
 
            <Route path='/' element={<Home />}></Route>

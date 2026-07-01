@@ -1,10 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+
+
+
+const Navbar = (props) => {
+
+  function changeTheme(){
+      props.setTheme('Light')
+  }
+
+  
+
+
   return (
     <div className="navbar">
-          <p>Navbar</p>
+          <p>{props.Theme}</p>
+          
           <div className='link'>
                 <Link to={'/'} className='customlink'>Home</Link>
                 <Link to={'/About'} className='customlink'>About</Link>
@@ -13,6 +25,7 @@ const Navbar = () => {
                 <Link href='' className='customlink'>Blog</Link>
                 <Link href='' className='customlink'>Contact</Link>
           </div>
+          <button onClick={changeTheme}>Change Theme</button>
     </div>
   )
 }
