@@ -7,7 +7,9 @@ const App = () => {
   const data = useContext(theme);
   
   return (
-    <div>{data}</div>
+    <div>{data}
+       
+    </div>
   )
 }
 
